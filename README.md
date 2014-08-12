@@ -26,7 +26,7 @@ Using the virtualization product you want your students to use, create a VM and 
 Start the VM and ensure it has a connection to the Internet. Apply any available system updates. Use the Software Updater icon that appears in the Unity launcher or open a Terminal and apply updates using the command line:
 
 ```shell
-sudo apt-get -y -f update
+sudo apt-get -y update
 sudo apt-get -y -f dist-upgrade
 ```
 
