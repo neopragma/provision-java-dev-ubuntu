@@ -4,7 +4,7 @@ Provision an instance of Ubuntu Linux with software to be a Java development env
 
 ## Steps
 
-The instructions assume you will provision a virtual machine with Ubuntu Linux. This has been tested with the following operating systems:
+The instructions assume you will provision a virtual machine with Ubuntu Linux. This has been tested with the following operating systems and virtualization products:
 
 * VMware Player 6.0.1 Linux 64-bit
 * VMware Player 6.0.2 Linux 64-bit
