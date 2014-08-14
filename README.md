@@ -6,7 +6,11 @@ Provision an instance of Ubuntu Linux with software to be a Java development env
 
 The instructions assume you will provision a virtual machine with Ubuntu Linux. This has been tested with the following operating systems:
 
-* Ubuntu 14.04 LTS 64-bit
+* VMware Player 6.0.1 Linux 64-bit
+* VMware Player 6.0.2 Linux 64-bit
+* VMware Player 6.0.1 Windows 8.1 64-bit
+* VMware Player 6.0.2 Windows 8.1 64-bit
+* Oracle VirtualBox 4.3.14 Linux 64-bit
 
 ### Step 1 - Download Ubuntu iso
 
@@ -14,13 +18,7 @@ Open a browser and navigate to http://www.ubuntu.com. Download the iso for the v
 
 ### Step 2 - Create VM
 
-Using the virtualization product you want your students to use, create a VM and install Ubuntu on it. This procedure has been tested with the following virtualization products:
-
-* VMware Player 6.0.1 Linux 64-bit
-* VMware Player 6.0.2 Linux 64-bit
-* VMware Player 6.0.1 Windows 8.1 64-bit
-* VMware Player 6.0.2 Windows 8.1 64-bit
-* Oracle VirtualBox 4.3.14 Linux 64-bit
+Using the virtualization product you want to use, create a VM and install Ubuntu on it. 
 
 ### Step 3 - Apply system updates
 
