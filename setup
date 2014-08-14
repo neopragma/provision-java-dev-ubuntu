@@ -5,36 +5,36 @@
 # Arguments:
 # (None)		
 #
-# Version: 1.1.0
-# Date: 03-May-2014
+# Version: 1.2.0
+# Date: 14 Aug 2014
 # Author: Dave Nicolette
 #======================================================================================
-export INSTALL_DIR="$HOME/provision-java-dev-training-vm"
+export INSTALL_DIR="$HOME/provision-java-dev-ubuntu"
 export COMMON_DIR="provision-ubuntu-common"
 
 git clone "git://github.com/neopragma/$COMMON_DIR"
 
 "./$COMMON_DIR/install_build_support"
 "./$COMMON_DIR/install_sublime_text_3"
-sudo apt-get -y -f install aptitude curl
+"./$COMMON_DIR/install_curl"
 
 echo
 echo '============================================================='
 echo 'Installing Microsoft TrueType fonts...'
 
-sudo apt-get install -y -f ttf-mscorefonts-installer
+"./$COMMON_DIR/install_mscorefonts"
 
 echo
 echo '============================================================='
 echo 'Installing Java Development Kit...'
 
-sudo apt-get install -y -f openjdk-7-jdk
+"./$COMMON_DIR/install_java8"
 
 echo
 echo '============================================================='
 echo 'Installing Maven...'
 
-sudo apt-get install -y -f maven
+"./$COMMON_DIR/install_maven"
 
 # =============================================================
 # Installing Eclipse...
@@ -43,23 +43,19 @@ sudo apt-get install -y -f maven
 
 echo
 echo '============================================================='
-echo 'Installing RVM, Ruby, and Bundler...'
+echo 'Installing Ruby...'
 
-pushd "$HOME"
-\curl -sSL https://get.rvm.io | bash -s stable --ruby=2.1
-echo 'source "$HOME/.rvm/scripts/rvm"' >> .bashrc
-. .bashrc
-rvm --default use 2.1.1
-gem install bundler
-popd
+"./$COMMON_DIR/install_ruby"
+
+echo
+echo '============================================================='
+echo 'Installing ArgoUML...'
+
+"./$COMMON_DIR/install_argouml"
 
 echo
 echo '============================================================='
 echo 'Setting the desktop background image...'
-
-
-# Install ArgoUML
-./install_argouml
 
 mkdir -p "$HOME/.backgrounds"
 cp -f java-background.png "$HOME/.backgrounds/."
