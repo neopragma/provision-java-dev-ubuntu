@@ -21,7 +21,8 @@ pkg[${#pkg[@]}]="linux-headers-$(uname -r)"
 pkg[${#pkg[@]}]='dkms'
 pkg[${#pkg[@]}]='python-software-properties'
 pkg[${#pkg[@]}]='sublime-text-installer'
-pkg[${#pkg[@]}]='openjdk-7-jdk'
+pkg[${#pkg[@]}]='java8-jdk'
+pkg[${#pkg[@]}]='maven'
 
 for name in "${pkg[@]}"
 do
