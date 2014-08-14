@@ -20,6 +20,7 @@ Using the virtualization product you want your students to use, create a VM and 
 * VMware Player 6.0.2 Linux 64-bit
 * VMware Player 6.0.1 Windows 8.1 64-bit
 * VMware Player 6.0.2 Windows 8.1 64-bit
+* Oracle VirtualBox 4.3.14 Linux 64-bit
 
 ### Step 3 - Apply system updates
 
